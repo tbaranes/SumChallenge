@@ -1,0 +1,29 @@
+//
+//  Prefix header
+//
+//  The contents of this file are implicitly included at the beginning of every source file.
+//
+
+#import <Availability.h>
+
+#ifndef __IPHONE_5_0
+#warning "This project uses features only available in iOS SDK 5.0 and later."
+#endif
+
+#ifdef __OBJC__
+	#import <UIKit/UIKit.h>
+	#import <Foundation/Foundation.h>
+
+	#import "SCCategories.h"
+	#import "FSI.h"
+#endif
+
+#define NB_GAME_COLUMN 5
+#define MAX_NUMBER_RANGE_AT_START 10
+#define MIN_NUMBER_RANGE_AT_START 0
+
+#define CIRCLE_ANIMATION_DURATION_MIN 2.7f
+#define CIRCLE_ANIMATION_DURATION_MAX 1.7f
+#define CIRCLE_ANIMATION_DURATION_DEC 0.015f
+
+static NSString *keyUserDefaultBestScore = @"keyUserDefaultBestScore";

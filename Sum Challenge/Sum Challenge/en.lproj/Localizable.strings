@@ -1,0 +1,10 @@
+/* Localized versions of Info.plist keys */
+
+"home.title.your_score" = "Your score\n";
+"home.title.best_score" = "Best score\n";
+"home.msg.first_launch" = "Ranking";
+
+"home.btn.launch_game" = "PLAY";
+"game.msg.common_operation" = "+";
+
+"end_game.msg.see_ranking" = "Click to see your rank !";
