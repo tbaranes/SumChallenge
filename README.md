@@ -3,9 +3,7 @@ SumChallenge's code, available on the apple store
 
 FriendsPictureQuiz's code, available on the Apple store... until when?
 
-Small application developed and released in 2014. The application has been developped for iOS7/8, and has never been tester on the last iOS versions.
-
-Feel free to use the code if necessary!
+Small application developed and released in 2014. The application has been developped for iOS7/8, and has never been tested on the last iOS versions.
 
 ### What is it?
 
