@@ -1,11 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" colorMatched="YES" initialViewController="vXZ-lx-hvc">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="vXZ-lx-hvc">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <customFonts key="customFonts">
@@ -18,10 +19,6 @@
         <scene sceneID="ufC-wZ-h7g">
             <objects>
                 <viewController id="vXZ-lx-hvc" customClass="SCHomeViewController" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="imv-xX-jyh"/>
-                        <viewControllerLayoutGuide type="bottom" id="aWh-BQ-4dM"/>
-                    </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -31,7 +28,7 @@
                                 <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Dbt-be-mNX" userLabel="View - Menu">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="620"/>
+                                <rect key="frame" x="0.0" y="47" width="375" height="573"/>
                                 <subviews>
                                     <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="home.title.your_score" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="188" translatesAutoresizingMaskIntoConstraints="NO" id="PMm-8h-CaU" userLabel="Label - Your score">
                                         <rect key="frame" x="95.5" y="77" width="184.5" height="48"/>
@@ -46,7 +43,7 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jYZ-Kb-efD" userLabel="Button - Ranking">
-                                        <rect key="frame" x="123.5" y="254.5" width="128" height="111"/>
+                                        <rect key="frame" x="123.5" y="231" width="128" height="111"/>
                                         <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
                                         <inset key="titleEdgeInsets" minX="-128" minY="150" maxX="0.0" maxY="0.0"/>
                                         <state key="normal" image="icon_podium.png">
@@ -60,7 +57,7 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eHT-oq-5Ep" userLabel="Button - Launch game">
-                                        <rect key="frame" x="76.5" y="380.5" width="222" height="36"/>
+                                        <rect key="frame" x="76.5" y="357" width="222" height="36"/>
                                         <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
                                         <state key="normal" title="home.btn.launch_game">
                                             <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -156,19 +153,19 @@
                         </subviews>
                         <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="z01-cr-F2t" firstAttribute="top" secondItem="kh9-bI-dsS" secondAttribute="top" id="1n5-AO-Gp5"/>
-                            <constraint firstItem="Ht2-yt-4h3" firstAttribute="top" secondItem="z01-cr-F2t" secondAttribute="bottom" id="7u0-ex-tBH"/>
-                            <constraint firstItem="z01-cr-F2t" firstAttribute="top" secondItem="Dbt-be-mNX" secondAttribute="top" id="KfV-0e-FwF"/>
-                            <constraint firstItem="z01-cr-F2t" firstAttribute="leading" secondItem="Ht2-yt-4h3" secondAttribute="leading" id="PnB-70-cUn"/>
-                            <constraint firstItem="aWh-BQ-4dM" firstAttribute="top" secondItem="Ht2-yt-4h3" secondAttribute="bottom" id="UAO-2e-Ajm"/>
-                            <constraint firstItem="Dbt-be-mNX" firstAttribute="bottom" secondItem="Ht2-yt-4h3" secondAttribute="bottom" constant="-47" id="UT2-Oi-fgc"/>
-                            <constraint firstItem="Ht2-yt-4h3" firstAttribute="top" secondItem="z01-cr-F2t" secondAttribute="bottom" id="ZrE-M9-6gY"/>
-                            <constraint firstItem="z01-cr-F2t" firstAttribute="trailing" secondItem="Dbt-be-mNX" secondAttribute="trailing" id="aFA-5H-AYw"/>
-                            <constraint firstAttribute="trailing" secondItem="Ht2-yt-4h3" secondAttribute="trailing" id="aKz-fs-dwb"/>
-                            <constraint firstItem="z01-cr-F2t" firstAttribute="leading" secondItem="Dbt-be-mNX" secondAttribute="leading" id="ud1-Ny-MYP"/>
-                            <constraint firstItem="z01-cr-F2t" firstAttribute="trailing" secondItem="Ht2-yt-4h3" secondAttribute="trailing" id="wNm-Z6-NFf"/>
-                            <constraint firstItem="Ht2-yt-4h3" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" id="yfB-1I-JtA"/>
+                            <constraint firstItem="Dbt-be-mNX" firstAttribute="centerY" secondItem="kh9-bI-dsS" secondAttribute="centerY" id="0c5-z9-8fv"/>
+                            <constraint firstItem="Ht2-yt-4h3" firstAttribute="top" secondItem="Dbt-be-mNX" secondAttribute="bottom" id="9yI-WN-fYQ"/>
+                            <constraint firstItem="ecv-HI-fmY" firstAttribute="bottom" secondItem="Ht2-yt-4h3" secondAttribute="bottom" id="UAO-2e-Ajm"/>
+                            <constraint firstItem="z01-cr-F2t" firstAttribute="trailing" secondItem="ecv-HI-fmY" secondAttribute="trailing" id="WeU-qB-vWA"/>
+                            <constraint firstItem="ecv-HI-fmY" firstAttribute="trailing" secondItem="Ht2-yt-4h3" secondAttribute="trailing" id="aKz-fs-dwb"/>
+                            <constraint firstItem="Dbt-be-mNX" firstAttribute="trailing" secondItem="ecv-HI-fmY" secondAttribute="trailing" id="bSl-t9-SzE"/>
+                            <constraint firstItem="Dbt-be-mNX" firstAttribute="leading" secondItem="ecv-HI-fmY" secondAttribute="leading" id="guE-tD-q6H"/>
+                            <constraint firstItem="z01-cr-F2t" firstAttribute="top" secondItem="kh9-bI-dsS" secondAttribute="top" id="ogH-nn-UxU"/>
+                            <constraint firstItem="Ht2-yt-4h3" firstAttribute="top" secondItem="z01-cr-F2t" secondAttribute="bottom" id="ov8-6y-DbI"/>
+                            <constraint firstItem="z01-cr-F2t" firstAttribute="leading" secondItem="ecv-HI-fmY" secondAttribute="leading" id="yDK-2z-LwM"/>
+                            <constraint firstItem="Ht2-yt-4h3" firstAttribute="leading" secondItem="ecv-HI-fmY" secondAttribute="leading" id="yfB-1I-JtA"/>
                         </constraints>
+                        <viewLayoutGuide key="safeArea" id="ecv-HI-fmY"/>
                     </view>
                     <connections>
                         <outlet property="btnLaunchGame" destination="eHT-oq-5Ep" id="MBh-g3-Hn2"/>
