@@ -74,7 +74,7 @@
 - (NSInteger)generateRandomNumberWithOldNumber:(NSInteger)oldNumber {
 	[self erasedNumber:oldNumber];
 	
-	int number = [self randomNumber];
+	NSInteger number = [self randomNumber];
 	while ([self.currentNumbersUsed containsObject:@(number)]) {
 		number = [self randomNumber];
 	}

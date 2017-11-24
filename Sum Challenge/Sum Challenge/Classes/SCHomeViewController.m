@@ -6,7 +6,6 @@
 //  Copyright (c) 2014 Tom Baranes. All rights reserved.
 //
 
-#import <iAd/iAd.h>
 #import "SCHomeViewController.h"
 
 @interface SCHomeViewController ()
@@ -28,8 +27,11 @@
 	[self setupBestScore];
 	[self authenticateLocalPlayer];
 	
-	[self.viewGame setDelegate:self];	
-    self.canDisplayBannerAds = YES;
+	[self.viewGame setDelegate:self];
+}
+
+- (UIStatusBarStyle)preferredStatusBarStyle {
+    return UIStatusBarStyleLightContent;
 }
 
 #pragma mark - Setup
@@ -78,17 +80,9 @@
 #pragma mark - Menu management
 
 - (void)shouldBeDisplayedMenu:(BOOL)shouldBeDisplayedMenu {
-	self.canDisplayBannerAds = shouldBeDisplayedMenu;
-	CGRect frame = [self.viewMenu frame];
-	if (shouldBeDisplayedMenu) {
-		frame.origin.y = -floorf(CGRectGetHeight([self.viewMenu bounds]));
-		[self.viewMenu setFrame:frame];
-	}
-	[UIView animateWithDuration:1.f animations:^{
-		CGRect newFrame = frame;
-		newFrame.origin.y = shouldBeDisplayedMenu ? 0 : -floorf(CGRectGetHeight([self.viewMenu bounds]));
-		[self.viewMenu setFrame:newFrame];
-	}];
+	[UIView animateWithDuration:0.5f animations:^{
+        self.viewMenu.alpha = shouldBeDisplayedMenu ? 1 : 0;
+    }];
 }
 
 #pragma mark - SCGameDelegate 

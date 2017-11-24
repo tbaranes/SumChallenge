@@ -144,7 +144,7 @@
 
 - (void)resetBtn:(SCCircleNumberButton *)btn {
 	NSInteger oldNumber = [[btn titleForState:UIControlStateNormal] intValue];
-	NSString *btnText = [NSString stringWithFormat:@"%d", [self.numberManager generateRandomNumberWithOldNumber:oldNumber]];
+    NSString *btnText = [NSString stringWithFormat:@"%ld", (long)[self.numberManager generateRandomNumberWithOldNumber:oldNumber]];
 	[btn resetButtonWithTitle:btnText];
 }
 

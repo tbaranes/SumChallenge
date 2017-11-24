@@ -23,7 +23,7 @@
 #define MIN_NUMBER_RANGE_AT_START 0
 
 #define CIRCLE_ANIMATION_DURATION_MIN 2.7f
-#define CIRCLE_ANIMATION_DURATION_MAX 1.7f
+#define CIRCLE_ANIMATION_DURATION_MAX 4.f
 #define CIRCLE_ANIMATION_DURATION_DEC 0.015f
 
 static NSString *keyUserDefaultBestScore = @"keyUserDefaultBestScore";
