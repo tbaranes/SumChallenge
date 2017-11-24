@@ -11,6 +11,5 @@
 @interface SCCircleNumberButton : UIButton
 
 - (void)resetButtonWithTitle:(NSString *)title;
-- (void)animationWithDelay:(NSInteger)delay duration:(NSInteger)duration completion:(void (^)(void))completion newY:(NSInteger)newY;
 
 @end

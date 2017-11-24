@@ -41,20 +41,4 @@
 	[self.layer removeAllAnimations];
 }
 
-#pragma mark - Animation management
-
-- (void)animationWithDelay:(NSInteger)delay duration:(NSInteger)duration completion:(void (^)(void))completion newY:(NSInteger)newY {
-	[UIView animateWithDuration:duration
-						  delay:delay
-						options:UIViewAnimationOptionAllowUserInteraction|UIViewAnimationOptionRepeat
-					 animations:^{
-						 
-						 [self setFrame:CGRectOffset([self frame], 0, newY)];
-					 } completion:^(BOOL finished) {
-						 completion();
-					 }];
-
-}
-
-
 @end
