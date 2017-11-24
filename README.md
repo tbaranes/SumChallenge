@@ -1,9 +1,7 @@
 # SumChallenge
-SumChallenge's code, available on the apple store
+SumChallenge's code, available on the apple store since 2014.
 
-FriendsPictureQuiz's code, available on the Apple store... until when?
-
-Small application developed and released in 2014. The application has been developped for iOS7/8, and has never been tested on the last iOS versions.
+SumChallenge's code, available on the Apple store... while my license developer is up to date.
 
 ### What is it?
 
