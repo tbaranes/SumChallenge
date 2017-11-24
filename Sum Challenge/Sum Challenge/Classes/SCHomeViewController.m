@@ -30,6 +30,10 @@
 	[self.viewGame setDelegate:self];
 }
 
+- (UIStatusBarStyle)preferredStatusBarStyle {
+    return UIStatusBarStyleLightContent;
+}
+
 #pragma mark - Setup
 
 - (void)setupUI {
