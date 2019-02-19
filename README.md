@@ -1,7 +1,6 @@
 # SumChallenge
-SumChallenge's code, available on the apple store since 2014.
 
-SumChallenge's code, available on the Apple store... while my license developer is up to date.
+SumChallenge was a small application I developed and released in 2014. 
 
 ### What is it?
 
