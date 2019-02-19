@@ -1,6 +1,6 @@
 # SumChallenge
 
-SumChallenge was a small application I developed and released in 2014. 
+SumChallenge is a small application I developed and released in 2014. 
 
 ### What is it?
 
